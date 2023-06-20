@@ -2,6 +2,7 @@
 /**
  *_abs - prints basolute value
  *Return: 0 if ran
+ *@n: the int for abs value
  */
 int _abs(int n)
 {
