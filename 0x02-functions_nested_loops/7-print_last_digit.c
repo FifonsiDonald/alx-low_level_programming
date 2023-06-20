@@ -24,6 +24,5 @@ int print_last_digit(int n)
 			c = n % 10;
 		}
 	}
-
-
+	return (c);
 }
