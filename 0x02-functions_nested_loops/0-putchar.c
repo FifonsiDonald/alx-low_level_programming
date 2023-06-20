@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
+#include "main.h"
 
 /* betty style doc for function main goes there */
 /**
@@ -10,7 +10,11 @@
  */
 int main(void)
 {
-	printf("_putchar");
+	print_putchar();
 	return (0);
+}
+void print_putchar()
+{
+	printf("_putchar\n");
 }
 
