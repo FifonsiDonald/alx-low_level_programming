@@ -1,0 +1,1 @@
+the bug checker readme
