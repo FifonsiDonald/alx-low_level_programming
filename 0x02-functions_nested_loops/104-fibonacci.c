@@ -16,7 +16,7 @@ for (count = 0; count < 92; count++)
 {
 sum = fib1 + fib2;
 printf("%lu, ", sum);
-fibl = fib2;
+fib1 = fib2;
 fib2 = sum;
 }
 fib1_half1 = fib1 / 10000000000;
@@ -43,4 +43,5 @@ fib2_half2 = half2;
 }
 printf("\n");
 return (0);
+}
 }
