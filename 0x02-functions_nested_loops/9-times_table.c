@@ -30,7 +30,6 @@ _putchar(s + '0');
 }
 else
 {
-_putchar(' ');
 _putchar(s / 10 + '0');
 _putchar(s % 10 + '0');
 }
