@@ -17,8 +17,6 @@ if (s < 10)
 {
 if (a == 0 && i != 0)
 {
-_putchar(' ');
-_putchar(' ');
 _putchar(s + '0');
 }
 else
@@ -30,6 +28,7 @@ _putchar(s + '0');
 }
 else
 {
+_putchar(' ');
 _putchar(s / 10 + '0');
 _putchar(s % 10 + '0');
 }
