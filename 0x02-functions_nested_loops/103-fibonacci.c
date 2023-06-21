@@ -1,21 +1,27 @@
 #include <stdio.h>
 
 /**
-*main Prints the sum of Even Fibonacci numbers
-*Return: Nothing
+*main - program that prints the first 50 Fibonacci numbers,
+*Return: Always 0.
 */
+
 int main(void)
 {
-int i = 0;
-long j = 1, k = 2, sum = k;
+	unsigned long fibo1 = 0, fibo2 = 1, fibosum;
+	float total_sum;
 
-while (k + j < 4000000)
-{
-k += j;
-if (k % 2 == 0)
-sum += k;
-j = k - j;
-++i;
+	while (1)
+	{
+		fibosum = fibo1 + fibo2;
+		if (fibosum > 4000000)
+			break;
+		if ((fibosum % 2) == 0)
+			total_sum += fibosum;
+
+		fibo1 = fibo2;
+		fibo2 = fibosum;
+	}
+	printf("%.0f\n", total_sum);
+
+	return (0);
 }
-printf("%ld\n", sum);
-return (0);
