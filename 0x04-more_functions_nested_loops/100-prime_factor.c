@@ -11,7 +11,7 @@ int main(void)
 	long int k = 612852475143;
 	long int i;
 
-	for (i = 2; i < n; i++)
+	for (i = 2; i < k; i++)
 	{
 		while (k % i == 0)
 			k /= i;
