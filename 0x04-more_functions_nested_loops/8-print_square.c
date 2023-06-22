@@ -21,7 +21,7 @@ for (d = 0; d < size; d++)
 {
 _putchar ('#');
 }
-_putchar ('\n');
 }
+_putchar ('\n');
 }
 }
