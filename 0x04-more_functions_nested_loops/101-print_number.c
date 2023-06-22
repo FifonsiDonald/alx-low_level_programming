@@ -1,8 +1,8 @@
-#include <main.h>
+#include "main.h"
 
 /**
- * print_number - prints integers
- * n: int to print
+ * print_number - prints an integer using only _putchar
+ * @n : integer to print
  *
  * Return: void
  */
