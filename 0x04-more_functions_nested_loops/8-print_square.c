@@ -19,7 +19,6 @@ else
 {
 for (d = 0; d < size; d++)
 {
-_putchar (' ');
 _putchar (o);
 }
 _putchar ('\n');
