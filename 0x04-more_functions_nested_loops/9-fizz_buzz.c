@@ -2,7 +2,7 @@
 
 /**
  * main - prints Fizz for multiples of 3, Buzz for those of 5
- * FIzzBuzz for multiples of both 3 and 5. 
+ * FIzzBuzz for multiples of both 3 and 5.
  * Return: 0
  */
 int main(void)
