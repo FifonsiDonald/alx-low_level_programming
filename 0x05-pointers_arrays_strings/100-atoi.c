@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _atoi - print char as int
  * @s: string to change
