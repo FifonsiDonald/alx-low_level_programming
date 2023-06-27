@@ -14,7 +14,7 @@ void puts_half(char *str)
 	{
 		count++;
 	}
-	half = (length + 1) / 2;
+	half = (count + 1) / 2;
 
 	for (i = half; i < count; i++)
 	{

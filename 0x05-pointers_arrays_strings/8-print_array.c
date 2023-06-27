@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 #include <stdio.h>
 /**
  * print_array - prints the memmbers of an array with commas separating them.
