@@ -1,0 +1,26 @@
+#include "main.h"
+/**
+ * _strcmp - compares two chars
+ * @s1: first string
+ * @s2: second string
+ * Return: comoparison
+ */
+int _strcmp(char *s1, char *s2)
+{
+	while (*s1 != '\0' && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	if (*s1 < *s2)
+	{
+		return (-1);
+	} else if (*s1 > *s2)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
