@@ -5,7 +5,7 @@
  * to another
  * @dest: where to concatenate
  * @src: string to concatenate
- * @n: num of bytes 
+ * @n: num of bytes
  * Return: dest
  */
 
