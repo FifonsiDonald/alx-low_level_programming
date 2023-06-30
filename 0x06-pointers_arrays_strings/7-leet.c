@@ -6,22 +6,21 @@
  */
 char *leet(char *s)
 {
-	char *ptr = s;
+	int i, j;
 
-	while(*ptr != "\0")
+	char low[] = "aeotl";
+	char upp[] = "AEOTL";
+	char leet[] = "43071";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((*ptr == 'a') || (*ptr == 'A'))
-			*ptr = '4';
-		else if ((*ptr == 'e') || (*ptr == 'E'))
-			*ptr = '3';
-		else if ((*ptr == 'o') || (*ptr == 'O'))
-			*ptr = '0';
-		else if ((*ptr == 't') || (*ptr == 'T'))
-			*ptr = '7';
-		else if ((*ptr == 'l') || (*ptr == 'L'))
-			*ptr = '1';
-
-		ptr++;
+		for (j = 0; low[j] !=  '\0' && upp[j] != '\0'; j++)
+		{
+			if (s[i] == low[j] || s[i] == upp[j])
+			{
+				s[i] = leet[j];
+			}
+		}
 	}
-	return (s)
+	return (s);
 }
