@@ -6,7 +6,7 @@
  * @n1: string 1
  * @n2: string 2
  * @r: added string
- * @size_r: buffer of 
+ * @size_r: buffer of
  * Return: size r
  */
 
