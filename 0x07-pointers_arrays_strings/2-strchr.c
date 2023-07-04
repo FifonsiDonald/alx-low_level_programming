@@ -3,14 +3,13 @@
  *_strchr - copies bytes
  *@s: char
  *@c: location
- *@b: location for string two
  *Return: *s
  */
 char *_strchr(char *s, char c)
 {
 	int i;
 
-	while(*s)
+	while (*s)
 	{
 		if (*s == c)
 		{
@@ -20,7 +19,6 @@ char *_strchr(char *s, char c)
 		{
 			return (NULL);
 		}
-		s++	
+		s++;
 	}
-
 }
