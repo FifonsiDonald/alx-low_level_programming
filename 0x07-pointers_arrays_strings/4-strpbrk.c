@@ -14,9 +14,9 @@ char *_strpbrk(char *s, char *accept)
 	int i;
 	int j;
 
-	for (a = 0; s[i]; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (b = 0; accept[j]; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (s[i] == accept[j])
 				return (&(s[i]));
