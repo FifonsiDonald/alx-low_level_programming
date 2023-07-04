@@ -9,23 +9,13 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i;
+int s;
+int diagonal1 = 0;
+int diagonal2 = 0;
 
-	int x = 0;
-
-	int y = 0;
-
-	for (i = 0; i < size; i++)
-	{
-		x += a[i];
-		a += size;
-	}
-	a -= size;
-
-	for (i = 0; i < size; i++)
-	{
-		j += a[i];
-		a -= size;
-	}
-	printf("%d, %d\n", x, y);
+for (s = 0; s < size; s++)
+diagonal1 = diagonal1 + a[(size + 1) * s];
+for (s = 1; s < size + 1; s++)
+diagonal2 = diagonal2 + a[(size - 1) * s];
+printf("%d, %d\n", diagonal1, diagonal2);
 }
