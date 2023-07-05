@@ -1,14 +1,18 @@
 #include "main.h"
+
 /**
- *_puts_recursion - uses recursion
- *
- * @s: string to recurse through
+ * _strlen_recursion - gives the length of string using recursion
+ * @s: string to recurse
+ * Return: length of string
  */
-void _puts_recursion(char *s)
+int _strlen_recursion(char *s)
 {
-	if(*s)
+	int i;
+
+	if (*s)
 	{
-		_puts_recursion(s++);
-		_putchar(*s)
+		i = _strlen_recursion(s + 1);
+		i++;
 	}
+	return (i);
 }
