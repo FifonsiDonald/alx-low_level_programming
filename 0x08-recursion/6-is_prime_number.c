@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * is_prime_number - this function verify if number is prime
 (* a blank line
