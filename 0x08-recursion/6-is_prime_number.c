@@ -6,27 +6,20 @@
  */
 int is_prime_number(int n)
 {
-	if (n <= 1)
+	int i = 2;
+
+	if (n == 0 || n == 1)
 		return (0);
 
-	return (check_prime(n, 2));
-}
-
-/**
- * check_prime - Helper function to recursively check if a number is prime.
- * @n: The number to check.
- * @divisor: The current divisor to check divisibility.
- *
- * Return: 1 if 'n' is prime, 0 otherwise.
- */
-int check_prime(int n, int divisor)
-{
-	if (divisor == n)
+	if (n == i)
 		return (1);
 
-	if (n % divisor == 0)
+	if (n % i == 0)
 		return (0);
 
-	return (check_prime(n, divisor + 1));
+	i++;
+
+	return (is_prime_number(n));
+
 }
 
