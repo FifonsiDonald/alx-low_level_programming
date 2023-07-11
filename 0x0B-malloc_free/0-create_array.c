@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * create_array - creates an array using malloc
  * @size: byte size
@@ -11,7 +13,7 @@ char *create_array(unsigned int size, char c)
 	int i;
 
 	if (size == 0)
-		return (NULL);
+		return (0);
 
 	j = malloc(sizeof(char) * size);
 
