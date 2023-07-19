@@ -11,38 +11,31 @@
  **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-    if (name == NULL || owner == NULL)
-        return (NULL);
+	dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
+	if (name == NULL || owner == NULL)
+		return (NULL);
 
-    // Declare the pointer first, then allocate memory
-    dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
-    if (new_dog == NULL)
-    {
-        // Handle memory allocation failure
-        return NULL;
-    }
+	if (new_dog == NULL)
+	{
+		return NULL;
+	}
 
-    // Copy the name
-    new_dog->name = strdup(name);
-    if (new_dog->name == NULL)
-    {
-        // Handle memory allocation failure
-        free(new_dog);
-        return NULL;
-    }
+	new_dog->name = strdup(name);
+	if (new_dog->name == NULL)
+	{
+		free(new_dog);
+		return NULL;
+	}
+	new_dog->owner = strdup(owner);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return NULL;
+	}
 
-    // Copy the owner
-    new_dog->owner = strdup(owner);
-    if (new_dog->owner == NULL)
-    {
-        // Handle memory allocation failure
-        free(new_dog->name);
-        free(new_dog);
-        return NULL;
-    }
+	new_dog->age = age;
 
-    new_dog->age = age;
-
-    return new_dog;
+	return new_dog;
 }
 
