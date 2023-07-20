@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * op_add - adds 
+ * op_add - adds
  * @a: int to add
  * @b: int to add to
  * Return: sum of a and b
@@ -10,13 +10,13 @@ int op_add(int a, int b)
 	return (a + b);
 }
 /**
- * op_sub - substracts 
+ * op_sub - substracts
  * @a: int to substract from
  * @b: int to substract
  * Return: subtraction of a and b
- */ 
+ */
 int op_sub(int a, int b)
-{       
+{
 	return (a - b);
 }
 /**
@@ -41,11 +41,11 @@ int op_div(int a, int b)
 }
 /**
  * op_mod - mods
- * a: int to mod by
+ * @a: int to mod by
  * @b: int to mod
  * Return: mod of a and b
  */
 int op_mod(int a, int b)
 {
-        return (a % b);
+	return (a % b);
 }
