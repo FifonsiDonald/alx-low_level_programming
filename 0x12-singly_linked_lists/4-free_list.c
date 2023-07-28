@@ -13,8 +13,8 @@ void free_list(list_t *head)
 	struct list_s *tmp = NULL;
 	struct list_s *a =  NULL;
 
-	temp = head;
-	while (temp != NULL)
+	tmp = head;
+	while (tmp != NULL)
 	{
 		a = tmp->next;
 		free(tmp->str);
