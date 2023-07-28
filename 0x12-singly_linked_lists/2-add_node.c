@@ -9,17 +9,18 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	struct list_s *addnode = NULL;
-	int i;
+	list_t *new;
 
-	addnode = (struct list_s *)malloc(sizeof(list_t));
-	if (addnode == NULL)
-		return (NULL);
-	addnode->str = strdup(str);
-	for (i = 0; str[i] != '\0'; i++)
-		;
-	addnode->len = i;
-	addnode->next = *head;
-	*head = addnode;
-	return (addnode);
+	new = (list_t *) malloc(sizeof(list_t));
+
+	if (new == NULL)
+	{
+		return (0);
+	}
+	new->str = strdup(str);
+	new->len = strlen(str);
+	new->next = *head;
+	*head = new;
+
+	return (new);
 }
