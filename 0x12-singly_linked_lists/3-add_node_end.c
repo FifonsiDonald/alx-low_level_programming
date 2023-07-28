@@ -11,7 +11,8 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 
-	list_s *new, *tmp;
+	struct list_s *new = NULL;
+	struct list_s *tmp = NULL;
 	int i;
 
 	new = (struct list_s *)malloc(sizeof(struct list_s));
