@@ -10,11 +10,16 @@
  */
 void free_list(list_t *head)
 {
-	if (head)
+	struct list_s *tmp = NULL;
+	struct list_s *a =  NULL;
+
+	temp = head;
+	while (temp != NULL)
 	{
-		free_list(head->next);
-		if (head->str)
-			free(head->str);
-		free(head);
+		a = tmp->next;
+		free(tmp->str);
+		free(tmp);
+		tmp = a;
 	}
+	head = NULL;
 }

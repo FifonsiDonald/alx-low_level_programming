@@ -9,10 +9,10 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *addnode;
+	struct list_s *addnode = NULL;
 	int i;
 
-	addnode = malloc(sizeof(list_t));
+	addnode = (struct list_s *)malloc(sizeof(list_t));
 	if (addnode == NULL)
 		return (NULL);
 	addnode->str = strdup(str);
