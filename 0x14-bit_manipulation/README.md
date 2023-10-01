@@ -1,1 +1,0 @@
-Bit manipulationr readme
