@@ -1,5 +1,11 @@
 #include "lists.h"
 #include <stdlib.h>
+/**
+ * add_dnodeint_end - add node to end of doubly linked list
+ * @head: pointer to head of list
+ * @n: node data
+ * Return: address of new node, or Null if failed
+ */
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
