@@ -10,11 +10,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *del = NULL;
 
+	/* do nothing if nothing to delete */
 	if (head == NULL || *head == NULL)
 		return (-1);
 
 	del = *head;
 
+	/* delete first node */
 	if (index == 0)
 	{
 		*head = (*head)->next;
@@ -24,6 +26,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 
+	/* delete nth node as long as within range of list */
 	while ((index != 0) && (del->next != NULL))
 	{
 		index -= 1;
